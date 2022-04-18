@@ -31,7 +31,9 @@ const Explore = () => {
 
             <Fade bottom>
               <p className="mt-3">
-              Make she'd moved divided air. Whose tree that replenish tone hath own upon them it multiply was blessed is lights make gathering so day dominion so creeping air was made.
+                Make she'd moved divided air. Whose tree that replenish tone
+                hath own upon them it multiply was blessed is lights make
+                gathering so day dominion so creeping air was made.
               </p>
             </Fade>
             <Button className="btn btn-primary   my-3  fw-bold" variant="btn">

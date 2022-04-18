@@ -3,16 +3,13 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
 const ServiceDetail = () => {
-  
-  const { serviceId } = useParams();
+  const { checkoutId } = useParams();
   return (
     <div>
-    
-     
-     
-      
-      <div className="container my-5 p-5">  
-      <h3 className="my-5 py-3 text-center text-primary fw-bold">Welcome to see details for Service {serviceId}</h3>
+      <div className="container my-5 p-5">
+        <h3 className="my-5 py-3 text-center text-primary fw-bold">
+          Welcome to see details for Service {checkoutId}
+        </h3>
         <Form>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
@@ -66,11 +63,10 @@ const ServiceDetail = () => {
           <Form.Group className="mb-3" id="formGridCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
-
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
         </Form>
+        <Button variant="primary" type="">
+          Submit
+        </Button>
       </div>
     </div>
   );

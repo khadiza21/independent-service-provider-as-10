@@ -48,23 +48,36 @@ const Blog = () => {
           <Accordion.Header>
             <Fade bottom>
               <h5 className="fw-bold ques">
-            
                 Why are you using firebase? What other options do you have to
                 implement authentication?
               </h5>
             </Fade>
           </Accordion.Header>
           <Accordion.Body>
-         <h5>Firebase is used for many purposes that can help your apps to develop, grow and make it a quality app.Firebase system is easy and safe.In firebase Growth and User Engagement is awesome.Firebase Increase my Earnings.That's why I using firebase.</h5>
-         <ol>
-           <h5>Of course. Have other options have to
-                implement authentication.</h5>
-                <li>Basic -HTTP Basic Authentication is rarely recommended due to its inherent security vulnerabilities.</li>
-                <li>Bearer - Bearer authentication (also called token authentication) is an HTTP authentication scheme that involves security tokens called bearer tokens.</li>
-                <li>OAuth - OAuth 2.0 is the best choice for identifying personal user accounts and granting proper permissions. ETc.</li>
-             
-
-         </ol>
+            <h5>
+              Firebase is used for many purposes that can help your apps to
+              develop, grow and make it a quality app.Firebase system is easy
+              and safe.In firebase Growth and User Engagement is
+              awesome.Firebase Increase my Earnings.That's why I using firebase.
+            </h5>
+            <ol>
+              <h5>
+                Of course. Have other options have to implement authentication.
+              </h5>
+              <li>
+                Basic -HTTP Basic Authentication is rarely recommended due to
+                its inherent security vulnerabilities.
+              </li>
+              <li>
+                Bearer - Bearer authentication (also called token
+                authentication) is an HTTP authentication scheme that involves
+                security tokens called bearer tokens.
+              </li>
+              <li>
+                OAuth - OAuth 2.0 is the best choice for identifying personal
+                user accounts and granting proper permissions. ETc.
+              </li>
+            </ol>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2" className=" border-0 shadow rounded my-4">

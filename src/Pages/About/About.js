@@ -3,7 +3,6 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Fade } from "react-reveal";
 import myVersion from "../../img/me.PNG";
 
-
 const About = () => {
   return (
     <Container className="container my-5 py-3">
@@ -26,12 +25,13 @@ const About = () => {
               <h2 className="my-2 text-info fs-2 fw-bold pb-3">Bibi Khadiza</h2>
             </Fade>
             <Fade top>
-              <h5 className="my-2 text-primary fw-bold pb-3 ">About My Goal </h5>
+              <h5 className="my-2 text-primary fw-bold pb-3 ">
+                About My Goal{" "}
+              </h5>
             </Fade>
             <Fade bottom>
               <p className="mt-3">
-                And write a small paragraph (3-5 lines) about your goal. I'm
-                Khadiza.I sudiet in Bcs in CSE . I want to be a Software
+                I'm Khadiza.I sudiet in Bcs in CSE . I want to be a Software
                 Engineer. Now I want to be MERN Stack Developer. I love tech
                 field so that I love to do this work. So my next shortterm goal
                 is to be a Developer or MERN stack.And my leargest goal is To Be

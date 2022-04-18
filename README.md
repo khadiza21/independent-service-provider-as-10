@@ -17,4 +17,4 @@
 
 ##### Libraris: React , React-Router-Dom, React-Dom, react-bootstrap,react-firebase-hooks,react-reveal,react-toastify
 
-<a href=""><img src="./src/img/tralive.png" className="rounded" alt="" /></a>
+<a href=""><img src="./src/img/tralive.png" className="rounded mt-5" alt="" /></a>
