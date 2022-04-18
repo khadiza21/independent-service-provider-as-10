@@ -21,9 +21,5 @@ const auth = getAuth(app);
 export default auth;
 
 /* 
-step 3: install firebase cli : npm install -g firebase-tools
-setp 4: 
-1. firebase login
-2. firebase init
-3. firebase deploy
+ firebase deploy
 */
