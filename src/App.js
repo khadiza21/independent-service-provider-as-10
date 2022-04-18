@@ -8,8 +8,8 @@ import Footer from "./Pages/Shared/Footer/Footer";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
-import Checkout from "./Pages/Checkout/Checkout/Checkout";
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
+import Checkout from "./Pages/Checkout/Checkout/Checkout";
 
 function App() {
   return (

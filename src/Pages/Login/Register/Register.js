@@ -1,46 +1,65 @@
-
 import { Button, Form } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import auth from '../../../firebase.init';
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import {
+  useCreateUserWithEmailAndPassword,
+  useUpdateProfile,
+} from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
+import SocialLogin from "../SocialLogin/SocialLogin";
+import Loading from "../../Shared/Loading/Loading";
 
 const Register = () => {
- 
   const [
     createUserWithEmailAndPassword,
     user,
-    // loading,
+    loading,
     // error,
-  ] = useCreateUserWithEmailAndPassword(auth);
+  ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
   const navigate = useNavigate();
+  const location = useLocation();
+
+  let from = location.state?.from?.pathname || "/";
 
   const navigateLogin = () => {
     navigate("/login");
-  }
-
-   if (user) {
-    navigate("/home");
   };
 
-  const handleRegister = (event) => {
+  if (user) {
+    navigate(from, { replace: true });
+  }
+
+  if (loading || updating) {
+    return <Loading></Loading>;
+  }
+
+  if (user) {
+    console.log(user);
+  }
+
+  const handleRegister = async (event) => {
     event.preventDefault();
 
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
 
-    createUserWithEmailAndPassword(email, password);
- 
+    await createUserWithEmailAndPassword(email, password);
+    await updateProfile({ displayName: name });
+    // await updateProfile({ displayName, photoURL });
+    // alert('Updated profile');
+    console.log("Updated profile");
+    navigate("/home");
 
-   console.log(name,email,password);
+    console.log(name, email, password);
   };
 
-  
   return (
-    <div className="container w-50 mx-auto my-5 py-5">
+    <div className="container w-50 mx-auto mt-5 pt-5">
       <h3 className="text-primary text-center mt-2">Please Register</h3>
-      <Form onSubmit={handleRegister} className="mt-5 pt-5">
+      <Form onSubmit={handleRegister} className="mt-2 pt-2">
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Name</Form.Label>
           <Form.Control
@@ -50,7 +69,6 @@ const Register = () => {
             placeholder="Enter Name"
             required
           />
-        
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -84,7 +102,7 @@ const Register = () => {
           Submit
         </Button>
       </Form>
-      <p>
+      <p className="my-2">
         Already have an account?{" "}
         <Link
           to="/login"
@@ -94,6 +112,7 @@ const Register = () => {
           Please LogIn
         </Link>{" "}
       </p>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };
