@@ -3,12 +3,16 @@ import { Button, Col, Form, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
 const ServiceDetail = () => {
+  
   const { serviceId } = useParams();
   return (
     <div>
-      <h3>welcome to see details {serviceId}</h3>
-      <p></p>
-      <div className="container my-5 p-5">
+    
+     
+     
+      
+      <div className="container my-5 p-5">  
+      <h3 className="my-5 py-3 text-center text-primary fw-bold">Welcome to see details for Service {serviceId}</h3>
         <Form>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
@@ -43,6 +47,13 @@ const ServiceDetail = () => {
               <Form.Select defaultValue="Choose...">
                 <option>Choose...</option>
                 <option>...</option>
+                <option selected class="fw-bold">
+                  Dhaka Highway Road
+                </option>
+                <option class="fw-bold">Dhaka Aricha Road</option>
+                <option class="fw-bold">Uttora Highway</option>
+                <option class="fw-bold">Biruliya Road</option>
+                <option class="fw-bold">Chittagong Road</option>
               </Form.Select>
             </Form.Group>
 

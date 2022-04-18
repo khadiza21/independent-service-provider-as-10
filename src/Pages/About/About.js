@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Fade } from "react-reveal";
 import myVersion from "../../img/me.PNG";
-import "./About.css";
+
 
 const About = () => {
   return (
@@ -23,26 +23,41 @@ const About = () => {
         >
           <div className="px-4  text-justify">
             <Fade bottom>
-              <h2 className="my-2 fs-2 fw-bold pb-3">Bibi Khadiza</h2>
+              <h2 className="my-2 text-info fs-2 fw-bold pb-3">Bibi Khadiza</h2>
             </Fade>
             <Fade top>
-              <h3 className="my-2 fs-2 fw-bold pb-3 ">About My Goal </h3>
+              <h5 className="my-2 text-primary fw-bold pb-3 ">About My Goal </h5>
             </Fade>
             <Fade bottom>
               <p className="mt-3">
-                And write a small paragraph (3-5 lines) about your goal.
-                Learning a new skill. A common goal for engineers is learning a
-                new skill. ... Attaining a new position. ... Creating a positive
-                work-life balance. ... Expanding your network. ... Improving
-                your efficiency. And how you will work hard to achieve your
-                goal. Keep yourself motivated. ... Set your career goals. ...
-                Prepare an action plan. ... Manage your time effectively. ...
-                Accompany positive people. ... Take short breaks between work.
-                ... Remove distractions.
+                And write a small paragraph (3-5 lines) about your goal. I'm
+                Khadiza.I sudiet in Bcs in CSE . I want to be a Software
+                Engineer. Now I want to be MERN Stack Developer. I love tech
+                field so that I love to do this work. So my next shortterm goal
+                is to be a Developer or MERN stack.And my leargest goal is To Be
+                a Software Engineer.
               </p>
             </Fade>
-            <Button className="btn my-3  fw-bold" variant="btn">
-              See Me In Github
+            <br />
+            <Fade top>
+              <h5 className="my-2 text-primary fw-bold pb-3 ">
+                How to Archive my Goal{" "}
+              </h5>
+            </Fade>
+            <Fade bottom>
+              <p className="mt-3">
+                A common goal for engineers is learning a new skill.So, I'm
+                focusing to gain new skill.Skills can be gain by day-by-day
+                practice. So I should practice more and more.I have to dedicated
+                about my goals. I shouldn't dissapointed about my loss moment.I
+                should keep myself motivated.I will prepare an action plan and
+                Manage my time effectively.I should accompany positive people
+                .And finally achive my goal by my work hard and creative a
+                positive work-life balance.
+              </p>
+            </Fade>
+            <Button className="btn btn-primary   my-3  fw-bold" variant="btn">
+              Connect With Me
             </Button>
           </div>
         </Col>

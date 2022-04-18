@@ -10,6 +10,7 @@ const Service = ({ service }) => {
 
   const navigateToServiceDetail = (id) => {
     navigate(`/service/${id}`);
+
   };
 
 
@@ -17,29 +18,44 @@ const Service = ({ service }) => {
   return (
     <div className="container mt-3 pt-3 py-4 rounded shadow text-justify px-4">
       <div className="">
-        <img className="img-r " src={img} alt="" />
-        <Fade top>
-          <h3 className="ps-3 mt-2 fw-bold"> {name}</h3>
-          <p>{p}</p>
-          <h5>{price}</h5>
-        </Fade>
-        <Fade bottom>
+        <div className="h-50 mb-4 d-flex justify-content-center align-items-center rounded">
+           <img className="img-r img-fluid h-50 w-50" src={img} alt="" />
+        </div>
+       
+
+
+        <div>
+
+          <Fade top>
+          <h4 className=" mt-2 fw-bold">Service Name: {name}</h4>
+        
+          <h5>Price: {price}</h5>
+        </Fade> 
+          <Fade bottom>
           <p className="my-3 ">
-            {" "}
+       
             <span className="fw-bold">Service Detail: </span>{" "}
-            <span className="review-text">{p}</span>{" "}
+            <span className="service-text">{p}</span>{" "}
           </p>
         </Fade>
-      </div>
 
+       
       <Fade bottom>
         <button
+       
           onClick={() => navigateToServiceDetail(id)}
           className="btn btn-primary"
         >
           Detail
         </button>
-      </Fade>
+      </Fade> 
+
+
+        </div>
+       
+      
+      </div>
+
     </div>
   );
 };

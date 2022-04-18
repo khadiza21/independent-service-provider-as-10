@@ -19,11 +19,10 @@ const Banner = () => {
               </Flip>
               <Fade bottom>
                 <h5 className="mt-3">
-                  We collaborate with you to create new value through digital
-                  transformation. We have hundreds of specialists at your service.
+               Happy Travel with best guide. Let’s start your journey with us, your dream will come true.
                 </h5>
               </Fade>
-              <Button className="btn my-3 fw-bold" variant="btn">
+              <Button className="btn btn-primary my-3 fw-bold" variant="btn">
                 LIVE DEMO
               </Button>
             </div>

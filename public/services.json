@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "name": "bk",
-    "p": "guide",
-    "img": "https://images.unsplash.com/photo-1588390801685-1432b35a975b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dG91ciUyMGd1aWRlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-    "price": 12232
+    "name": "1 day guide Service",
+    "p": "I offer day trips for one or two adults, or one adult and two children. This means you'll get personal attention from our friendly and experienced guides to make your outing truly memorable and fun.",
+    "img": "./r-img/tour1.jpg",
+    "price": 2232
   },
   {
     "id": 2,
-    "name": "bk",
-    "p": "guide",
-    "img": "https://images.unsplash.com/photo-1588390801685-1432b35a975b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dG91ciUyMGd1aWRlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-    "price": 12232
+    "name": "3 days guide Service",
+    "p": "What makes our Susquehanna River fishing trips different is that the emphasis is on having a relaxing and enjoyable experience, rather than on strictly catching fish.",
+    "img": "./r-img/tour2.jpg",
+    "price": 5232
   },
   {
     "id": 3,
-    "name": "bk",
-    "p": "guide",
-    "img": "https://images.unsplash.com/photo-1588390801685-1432b35a975b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dG91ciUyMGd1aWRlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "name": "7 days guide Service",
+    "p": "You'll learn from experts about how to land the big one, and whether or not you do, you're guaranteed to have a great time trying!",
+    "img": "./r-img/tour3.jpg",
     "price": 12232
   }
 
