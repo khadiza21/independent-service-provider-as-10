@@ -29,7 +29,7 @@ const Service = ({ service }) => {
           <Fade top>
           <h4 className=" mt-2 fw-bold">Service Name: {name}</h4>
         
-          <h5>Price: {price}</h5>
+          <h5>Price: {price} /=</h5>
         </Fade> 
           <Fade bottom>
           <p className="my-3 ">
